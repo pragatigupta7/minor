@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="index.css">
+    <title>Food Ordering - Website</title>
+</head>
+
+<body>
+   <!----sidebar-->
+   <div class="sidebar">
+    <!----logo-->
+    <h1 class="logo">FOODIE</h1>
+    <!-----lists of menu-->
+    <div class="side-menu">
+        <a href="#"><i class="fa-solid fa-house">  </i>Home</a>
+        <a href="index2.html"><i class="fa-solid fa-money-bill"> </i>Catering</a>
+        <a href="#"><i class="fa-solid fa-wallet"></i> Wallet</a>
+        <a href="#"><i class="fa-solid fa-bell"></i>Notifications</a>
+        <a href="#"><i class="fa-solid fa-address-book"></i>Contact Us</a>
+        <a href="#"><i class="fa-solid fa-bars"></i>Setting</a>
+
+        <!---logout-->
+        <div class="logout">
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a>
+        </div>
+    </div>
+   </div>
+   <!-----main-->
+   <div class="main">
+    <!---main-navbar-->
+    <div class="main-navbar">
+        <!----when main on mobile version-->
+        <i class="menu-bar" class="fa-solid fa-bars" name="menu-outline"></i> 
+        <!---search-->
+        <div class="search">
+            <input type="text" placeholder="What you  want to eat?">
+            <button class="search-btn">Search</button>
+        </div>
+            <!----profile icon on left side of navbar-->
+            <div class="profile">
+                <a class="cart" href="#"><i class="fa-solid fa-cart-shopping" name="cart-outline"></i></a>
+                <a class="user" href="#" ><i class="fa-solid fa-user" name="person-outline"></i></a>
+            </div>
+        </div>
+     <div class="main-highlight">
+        <!--- title section and arrow-->
+        <div class="main-header">
+            <h2 class="main-title">Recommendations</h2>
+            <div class="main-arrow">
+                <i  class="fa-solid fa-less-than" id="back"></i>
+                <i class="fa-solid fa-greater-than" id="next"></i> 
+            </div>
+        </div>
+        <!---highlight menu-->
+        <div class="highlight-wrapper">
+            <div class="highlight-card">
+                <img class="highlight-img" src="salad.jpeg" alt="saladimg">
+                <div class="highlight-desc">
+                    <h4>Fresh Salad</h4>
+                    <p>$42.50</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <img class="highlight-img" src="cofee.jpeg" alt="coffeeimg">
+                <div class="highlight-desc">
+                    <h4>Cafe latte</h4>
+                    <p>$20.00</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <img src="burger.jpeg" alt="burger" class="highlight-img">
+                <div class="highlight-desc">
+                    <h4>Delicious Burger</h4>
+                    <p>$20.0</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <img class="highlight-img" src="steak.jpeg" alt="streakimg">
+                <div class="highlight-desc">
+                    <h4>Premium Streak</h4>
+                    <p>$159.00</p>
+                </div>
+            </div>
+
+        </div>
+     </div>
+  <!----main order-->
+     <!----filter section-->
+     <div class="main-filter">
+        <div>
+            <h2 style="margin-left: 10px;" class="main-title">Menu<br>Category </h2>
+            <div class="main-arrow">
+                <i style="margin-left: 10px;"  class="fa-solid fa-less-than" id="back"></i>
+                <i style="margin-left: 10px;"  class="fa-solid fa-greater-than" id="next"></i> 
+              </div>
+        </div>
+        <div class="filter-wrapper">
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <p>All Menu</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+                <p>Burger</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                </div>
+                <p>Pizza</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class="fa-solid fa-wine-bottle"></i>
+                </div>
+                <p>wine</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+                <p>Ice Cream</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+
+                </div>
+                <p>coffee</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class="fa-solid fa-fish"></i>
+                </div>
+                <p>Sea food</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
+                <p>Healthy</p>
+            </div>
+        </div>
+     </div>
+     <hr class="divider">
+     <!--------list of food menu-->
+     <div class="main-detail">
+        <h2 class="main-title">Choose Order</h2>
+        <div class="detail-wrapper">
+            <div class="detail-card">
+                <img class="detail-img" src="shrimp soup.jpeg" alt="img">
+                <div class="detail-desc">
+                     <div class="detail-name">
+                    <h4>Shrimp Soup </h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, placeat?</p>
+                    <p class="price">$152.00</p>
+                </div>
+                <i class="detail-favourites" class="fa-solid fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="detail-card">
+            <img class="detail-img" src="pizza-stock.jpg" alt="pizzaimg">
+            <div class="detail-desc">
+                <div class="detail-name">
+                    <h4>Pizza</h4>
+                    <p class="detail-sub">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, odio!
+                    </p>
+                    <p class="price">
+                        $68.75
+                    </p>
+                </div>
+                <i class="detail-favourites" class="fa-solid fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="detail-card">
+            <img class="detail-img" src="wine.jpeg" alt="wineimg">
+            <div class="detail-desc">
+                <div class="detail-name">
+                    <h4>Wine</h4>
+                    <p class="detail-sub">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, odio!
+                    </p>
+                    <p class="price">
+                        $168.75
+                    </p>
+                </div>
+                <i class="detail-favourites" class="fa-solid fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="detail-card">
+            <img class="detail-img" src="cofee.jpeg" alt="cofeeimg">
+            <div class="detail-desc">
+                <div class="detail-name">
+                    <h4>Coffee</h4>
+                    <p class="detail-sub">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, odio!
+                    </p>
+                    <p class="price">
+                        $68.75
+                    </p>
+                </div>
+                <i class="detail-favourites" class="fa-solid fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="detail-card">
+            <img class="detail-img" src="steak.jpeg" alt="streakimg">
+            <div class="detail-desc">
+                <div class="detail-name">
+                    <h4>Streak</h4>
+                    <p class="detail-sub">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, odio!
+                    </p>
+                    <p class="price">
+                        $68.75
+                    </p>
+                </div>
+                <i class="detail-favourites" class="fa-solid fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="detail-card">
+            <img class="detail-img" src="nutrition.jpeg" alt="nutritionimg">
+            <div class="detail-desc">
+                <div class="detail-name">
+                    <h4>Healthy</h4>
+                    <p class="detail-sub">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, odio!
+                    </p>
+                    <p class="price">
+                        $68.75
+                    </p>
+                </div>
+                <i class="detail-favourites" class="fa-solid fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="detail-card">
+            <img class="detail-img" src="mainicecream.jpeg" alt="icecream">
+            <div class="detail-desc">
+                <div class="detail-name">
+                    <h4>Ice-cream</h4>
+                    <p class="detail-sub">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, odio!
+                    </p>
+                    <p class="price">
+                        $80.75
+                    </p>
+                </div>
+                <i class="detail-favourites" class="fa-solid fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="detail-card">
+            <img class="detail-img" src="mainburger.jpeg" alt="burgerimg">
+            <div class="detail-desc">
+                <div class="detail-name">
+                    <h4>Burger</h4>
+                    <p class="detail-sub">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, odio!
+                    </p>
+                    <p class="price">
+                        $100.00
+                    </p>
+                </div>
+                <i class="detail-favourites" class="fa-solid fa-bookmark"></i>
+            </div>
+        </div>
+     </div>
+   </div>  
+ </div> 
+ </body>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+ 
+<script src="https://kit.fontawesome.com/eff9e83ba0.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
